@@ -8,6 +8,51 @@
   <title>Sign-up Form</title>
 </head>
 <body>
-  
+  <div class="backgroundImageContainer">
+    <h1 class="webTitle">Plant Paradise</h1>
+    <img src="./images/background.jpeg" alt="background image" class="backgroundImage">
+    <div class="footer">
+      Made by: <a href=https://github.com/damiangohrh123> <img id="gh-logo" src="./images/githublogo.png" alt="github logo"/> damiangohrh123</a>
+    </div>
+  </div>
+  <div class="formContainer">
+    <form action="" id="form" class="formGrid">
+
+      <h1 class="formHeader">
+        Get Started
+      </h1>
+      <label for="name">Name
+        <input type="text" id="name" name="name" required>
+        <span class="nameError"> </span>
+      </label>
+      <label for="lastname">Lastname
+        <input type="text" id="lastname" name="lastname">
+        <span class="lastNameError"></span>
+      </label>
+      <label for="email">Email
+        <input type="email" id="email" name="email" required>
+        <span class="emailError"></span>
+      </label>
+      <label for="phoneNumber">Phone Number
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <span class="phoneNumberError"></span>
+      </label>
+      <label for="password">Password
+        <input type="password" id="password" name="password" required>
+        <span></span>
+      </label>
+      <label for="confirmPassword">Confirm password
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <span class="passwordMatchError"></span>
+      </label>
+      <div>
+        <button type="submit">Create Account</button>
+        <p class="loginPrompt">Already have an account? <span class="login">LOG IN</span></p>
+      </div>
+    </form>
+  </div>
+  <footer>
+    
+  </footer>
 </body>
 </html>

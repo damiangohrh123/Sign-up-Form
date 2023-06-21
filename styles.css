@@ -1,0 +1,133 @@
+:root {
+  font-family: 'Roboto', sans-serif;
+  --primary-color: #273341;
+  --purple: rgb(164, 102, 177);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.formHeader {
+  font-size: 50px;
+  grid-column: 1 / -1;
+}
+
+.backgroundImageContainer {
+  flex:1;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.webTitle {
+  color: white;
+  font-size: 8vw;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+}
+
+.formContainer {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 100px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 40px 150px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+label span {
+  color: red;
+  position: absolute;
+  top: 60px;
+  white-space: nowrap;
+}
+
+label input {
+  border-radius: 4px;
+  border: 1px solid var(--primary-color);
+  padding: 6px 6px 6px 10px;
+  margin-top: 5px;;
+}
+
+input.invalid {
+  border: 2px solid red;
+  background-color: var(--purple);
+}
+
+input:focus.invalid {
+  border: 2px solid red;
+  outline: none;
+}
+
+input:focus {
+  outline: 2px solid var(--purple);
+  border: 1px solid var(--purple);
+}
+
+button[type='submit'] {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--purple);
+  color: rgb(255, 255, 255);
+}
+
+span.login {
+  color: var(--purple);
+}
+
+span.login:hover {
+  cursor: pointer;
+}
+
+.loginPrompt {
+  margin-top: 20px;
+}
+
+.footer {
+  color: white;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gh-logo {
+  width: 20px;
+}
